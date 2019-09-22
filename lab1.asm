@@ -5,7 +5,7 @@ segment stack stack
 segment data
 	dat dd 80000000h, 80000000h, 80000000h, 1h, 80000000h ; Исходная строка
 	lenw dw ($-dat)/4 ; Длина массива в двойных словах 
-	result times (lenw-dat)/4 db 0  ; Результат
+	result db 0  ; Результат
 	
 segment code
 ..start:
